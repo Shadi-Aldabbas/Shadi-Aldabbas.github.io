@@ -1,0 +1,53 @@
+.mainHeading{
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+   
+}
+.allHeading{
+    color: #A4A400;
+    text-decoration: underline;
+    background-color: #F0F0F0 ;
+    font-family: 'Lucida Sans Unicode', 'Helvetica', 'Aria', 'sans-serif';
+}
+.otherHeading{
+    font-size: 18pt;
+    font-weight: normal;
+}
+p, li {
+    color: #404040;
+    font-size: 11pt;
+    font-family:  'Georgia', 'Garamond';
+}
+a{
+    color: #A4A400;
+}
+abbr{
+    text-decoration: underline;
+}
+.delete{
+    text-decoration: line-through;
+}
+.comments{
+    background-color: #FFFFA8;
+}
+.allComments{
+    margin-left: 7%;
+    margin-right: 7%;
+}
+footer{
+    float: right;
+    margin-right: 1px;;
+}
+.singleImg {
+    float: right;
+    display: inline;
+    margin: 1%;
+}
+.endRight{
+    float: right;
+}
+.border{
+    border-bottom: 1px solid black;
+    border-color: #404040;
+}
