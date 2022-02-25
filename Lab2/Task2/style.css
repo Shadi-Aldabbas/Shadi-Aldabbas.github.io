@@ -51,3 +51,10 @@ footer{
     border-bottom: 1px solid black;
     border-color: #404040;
 }
+.commentSpacing{
+    margin-top: 200px;
+    
+}
+body  {
+    background-image: url("recipeImages/silverware.jpg");
+  }
