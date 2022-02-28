@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="webPage1.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>webPage1</title>
+  </head>
+  <body>
+      <div class="d-flex align-items-center justify-content-center full-height">
+          <div class="container">
+        <form>
+          <h5>Email Address:</h5>
+          <input class="fancy" type="email" name="email" placeholder="Enter Address" />
+          <label>We will never share your Email with anyone else</label>
+          <br />
+          <h5>password:</h5>
+          <input type="password" name="password" placeholder="Password"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{10,}$"  class="fancy" required />
+          <br />
+          <h5>Web Site URL:</h5>
+          <input type="text" name="URL" placeholder="Web Site URL"
+          pattern="https?://.+" class="fancy" />
+          <br />
+          <input class="form-check-input" name="checkOut"  type="checkbox" /> 
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <br />
+          <input type="submit" class="btn btn-primary btn-lg" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

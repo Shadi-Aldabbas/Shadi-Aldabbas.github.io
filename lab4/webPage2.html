@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="webPage2.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>webPage 2</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand">MUM Golden Dome Market : : : SRM System</a>
+
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Suppliers</a>
+            </li>
+          </ul>
+          <form class="d-flex justify-content-center align-items-center">
+            <p class="nav-p">Hello!</p>
+            <label class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-sm" type="button">Sign Out</button>
+            </label>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="d-flex align-items-center justify-content-center full-height">
+      <div class="container">
+        <form>
+          <div class="row">
+            <div class="col-6">
+              <h5>Product Number:</h5>
+              <input
+                class="fancy"
+                type="number"
+                name="number"
+              />
+              <br />
+            </div>
+
+            <div class="col-6">
+              <h5>Quantity in Stock:</h5>
+              <input
+                class="fancy"
+                type="number"
+                name="Supplier"
+                placeholder="0"
+              />
+              <br />
+            </div>
+
+            <div class="col-6">
+              <h5>Name:</h5>
+              <input class="fancy" type="text" name="Name" />
+              <br />
+            </div>
+
+            <div class="col-6">
+              <h5>Supplier:</h5>
+              <select class="form-select form-select-lg fancy" name="Quantity">
+                <option selected value="">Select Supplier</option>
+                <option value="1">Supplier 1</option>
+                <option value="2">Supplier 2</option>
+                <option value="3">Supplier 3</option>
+                <option value="4">Supplier 4</option>
+              </select>
+              <br />
+            </div>
+
+            <div class="col-6">
+              <h5>Unit Price:</h5>
+              <input
+              pattern="(\[0-9]+(. [0-9]+)?)"
+                class="fancy"
+                type="text"
+                name="Price"
+                placeholder="0.0"
+              />
+              <br />
+            </div>
+
+            <div class="col-6">
+              <h5>Date Supplied:</h5>
+              <input class="fancy" type="date" placeholder="yyyy-mm-dd" name="Date" />
+              <label class="form-check-label" for="exampleCheck1">Enter a valid Date</label>
+              <br />
+            </div>
+
+            <div class="col-12 inline">
+              <div class="col-4 inline">
+                <input
+                  type="reset"
+                  class="btn btn-outline-dark btn-group-cus"
+                />
+              </div>
+              <div class="col-4 inline">
+                <button
+                  type="Cancel"
+                  class="btn btn-outline-danger btn-group-cus"
+                >
+                  Cancel
+                </button>
+              </div>
+              <div class="col-4 inline">
+                <input
+                  type="submit"
+                  class="btn btn-outline-primary btn-group-cus btn-lg-cus"
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

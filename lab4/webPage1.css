@@ -1,0 +1,41 @@
+
+/* webPage 1 styles start from here */
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.full-height{
+    height: 100vh;
+}
+input[class="fancy"]{
+    display: block;
+    width: 100%;
+    padding-top: 8pt;
+    padding-bottom: 8pt;
+    padding-left: 8pt;
+    border: #D9D9D9 1px solid;
+    border-radius: 8pt;
+    border-color: #D9D9D9;
+}
+input:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+label{
+    color: gray;
+    margin-bottom: 10pt;
+}
+button{
+    padding: 10pt;
+}
+.btn-lg{
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+    text-align: center !important;
+    align-content: center !important;
+}
+.container{
+    width: 40vw !important;
+}
+/* webPage 1 styles end here*/
