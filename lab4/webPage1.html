@@ -12,27 +12,59 @@
     <title>webPage1</title>
   </head>
   <body>
-      <div class="d-flex align-items-center justify-content-center full-height">
-          <div class="container">
-        <form>
+    <div class="d-flex align-items-center justify-content-center full-height">
+      <div class="container">
+        <form action="#">
           <h5>Email Address:</h5>
-          <input class="fancy" type="email" name="email" placeholder="Enter Address" />
+          <input
+            class="fancy"
+            type="email"
+            name="email"
+            placeholder="Enter Address"
+            id="email"
+          />
           <label>We will never share your Email with anyone else</label>
           <br />
           <h5>password:</h5>
-          <input type="password" name="password" placeholder="Password"
-          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{10,}$"  class="fancy" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{10,}$"
+            class="fancy"
+            required
+            id="password"
+          />
           <br />
           <h5>Web Site URL:</h5>
-          <input type="text" name="URL" placeholder="Web Site URL"
-          pattern="https?://.+" class="fancy" />
+          <input
+            type="text"
+            name="URL"
+            placeholder="Web Site URL"
+            pattern="https?://.+"
+            class="fancy"
+            id="URL"
+          />
           <br />
-          <input class="form-check-input" name="checkOut"  type="checkbox" /> 
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <input
+            class="form-check-input"
+            name="checkOut"
+            type="checkbox"
+            id="checkOut"
+          />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
           <br />
-          <input type="submit" class="btn btn-primary btn-lg" />
+          <input
+            type="button"
+            value="submit"
+            class="btn btn-primary btn-lg"
+            onclick="logitBaby()"
+          />
         </form>
       </div>
     </div>
+    <script src="src.js"></script>
   </body>
 </html>

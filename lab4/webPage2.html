@@ -46,6 +46,7 @@
                 class="fancy"
                 type="number"
                 name="ProductNumber"
+                id="ProductNumber"
               />
               <br />
             </div>
@@ -56,6 +57,7 @@
                 class="fancy"
                 type="number"
                 name="Quantity"
+                id="Quantity"
                 placeholder="0"
               />
               <br />
@@ -63,18 +65,18 @@
 
             <div class="col-6">
               <h5>Name:</h5>
-              <input class="fancy" type="text" name="Name" />
+              <input class="fancy" type="text" name="Name" id="Name" />
               <br />
             </div>
 
             <div class="col-6">
               <h5>Supplier:</h5>
-              <select class="form-select form-select-lg fancy" name="Supplier">
+              <select class="form-select form-select-lg fancy" name="Supplier"  id="Supplier">
                 <option selected value="">Select Supplier</option>
-                <option value="1">Supplier 1</option>
-                <option value="2">Supplier 2</option>
-                <option value="3">Supplier 3</option>
-                <option value="4">Supplier 4</option>
+                <option value="Supplier 1">Supplier 1</option>
+                <option value="Supplier 2">Supplier 2</option>
+                <option value="Supplier 3">Supplier 3</option>
+                <option value="Supplier 4">Supplier 4</option>
               </select>
               <br />
             </div>
@@ -86,6 +88,7 @@
                 class="fancy"
                 type="text"
                 name="Price"
+                id="Price"
                 placeholder="0.0"
               />
               <br />
@@ -93,7 +96,7 @@
 
             <div class="col-6">
               <h5>Date Supplied:</h5>
-              <input class="fancy" type="date" placeholder="yyyy-mm-dd" name="Date" />
+              <input class="fancy" type="date" placeholder="yyyy-mm-dd" name="Date" id="Date" />
               <label class="form-check-label" for="exampleCheck1">Enter a valid Date</label>
               <br />
             </div>
@@ -115,7 +118,9 @@
               </div>
               <div class="col-4 inline">
                 <input
-                  type="submit"
+                onclick="popitUpBaby()"
+                  type="button"
+                  value="Add Product"
                   class="btn btn-outline-primary btn-group-cus btn-lg-cus"
                 />
               </div>
@@ -124,5 +129,6 @@
         </form>
       </div>
     </div>
+    <script src="src.js"></script>
   </body>
 </html>
