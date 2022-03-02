@@ -72,23 +72,18 @@ res = printFibo(10,0,1);
 console.log("printFibo of (n=10,a=0,b=1) = " + res );
 
 const getTime = () =>{
-  let date = new Date();
+  const date = new Date();
 
-  let year = date.getFullYear();
-  let month = date.getMonth();
-  let day = date.getDay();
+  const year = date.getFullYear();
+  const month = date.getMonth();
+  const day = date.getDay();
   
-  let h = date.getHours();
-  let m = date.getMinutes();
-  let s = date.getSeconds();
+  const h = date.getHours();
+  const m = date.getMinutes();
+  const s = date.getSeconds();
 
+  const time = year + "-" + month+ "-" + day+ " " + h + ":" + m + ":" + s + " " ;
   
-  
-  h = (h < 10) ? "0" + h : h;
-  m = (m < 10) ? "0" + m : m;
-  s = (s < 10) ? "0" + s : s;
-  
-  let time = year + "-" + month+ "-" + day+ " " + h + ":" + m + ":" + s + " " ;
   document.getElementById("MyClockDisplay").innerText = time;
   document.getElementById("MyClockDisplay").textContent = time;
   
