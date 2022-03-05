@@ -1,0 +1,61 @@
+.navHead{
+    color:white;
+}
+
+.nav-item{
+    padding-left: 50px;
+    padding-right: 50px;
+    border-left: 1px solid white;
+}
+.navbar-brand{
+    font-size: xx-large;
+    padding-right: 50px;
+}
+img{
+    width: 30vw;
+    height: 15vw;
+    float: right;
+    margin-left: 10pt;
+    margin-bottom: 10pt;
+}
+.inline-h{
+    display: inline;
+}
+footer{
+    background-color: gray;
+}
+.rightFooter{
+    float: right;
+}
+label{
+    font-size: larger;
+}
+
+hr{
+    margin-top: 20pt !important;
+    margin-bottom: 20pt !important;
+}
+.cus-float{
+    float: right !important;
+    margin-left: 20pt !important;
+    padding-left: 60pt !important;
+    padding-right: 60pt !important;
+}
+.top-space{
+    margin-top: 5pt !important; 
+    display: inline;
+}
+.bigPFont{
+    font-size: large;
+}
+
+.radio-input{
+    margin-right: 10pt !important;
+}
+input[type="reset"]{
+    background-color: gray;
+    border-color: gray;
+}
+.min-height{
+    min-height: 90vh;
+}
