@@ -1,0 +1,26 @@
+.navHead{
+    color:white;
+}
+.nav-item{
+    padding-left: 50px;
+    padding-right: 50px;
+    border-left: 1px solid white;
+}
+.navbar-brand{
+    font-size: xx-large;
+    padding-right: 50px;
+}
+img{
+    width: 30vw;
+    height: 30vh;
+    float: right;
+}
+.inline-h{
+    display: inline;
+}
+footer{
+    background-color: aqua;
+}
+.rightFooter{
+    float: right;
+}

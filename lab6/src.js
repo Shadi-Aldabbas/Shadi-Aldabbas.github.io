@@ -1,6 +1,7 @@
 "use strict";
 
 // Question 2 start --------------------------------------
+// global is accessed everywhere but local only inside local method
 let global = 8;
 
 const local = () => {
@@ -15,6 +16,7 @@ console.log(global);
 // Question 2 end --------------------------------------
 
 // Question 3 start --------------------------------------
+// I didn't know how to do this question I tried
 // scope A
 // console.log("1- " + B_global_1 + " " + C_global_1) // error
 function Xfunc() {
@@ -31,7 +33,7 @@ Xfunc();
 // Question 3 end --------------------------------------
 
 // Question 6,7,8 start --------------------------------------
-
+// JSON object with functions in values
 const count = {
   value: 0,
   counter_value: 1,
@@ -54,6 +56,7 @@ console.log("counter = " + count.add());
 // Question 6,7,8 end --------------------------------------
 
 // Question 10,11 start ---------------------------------------
+// all the methods that are in return is public other than than they are private
 const Employee = () => {
   let name = "";
   let age = 0;
