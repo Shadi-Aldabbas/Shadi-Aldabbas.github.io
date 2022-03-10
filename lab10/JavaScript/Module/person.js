@@ -6,17 +6,17 @@ export class Person {
     this.dateOfBirth = dateOfBirth;
   }
   get name() {
-    return this.name;
+    return this._name;
   }
   set name(name) {
-    this.name = name;
+    this._name = name;
   }
 
   get dateOfBirth() {
-    return this.dateOfBirth;
+    return this._dateOfBirth;
   }
   set dateOfBirth(dateOfBirth) {
-    this.dateOfBirth = dateOfBirth;
+    this._dateOfBirth = dateOfBirth;
   }
-  toString = () =>  `Name: ${this.name}, DateOfBirth: ${this.dateOfBirth.getFullYear()}-${this._dateOfBirth.getMonth() + 1}-${this._dateOfBirth.getDay() + 1}`;
+  toString = () =>  `Name: ${this.name}, DateOfBirth: ${this.dateOfBirth.getFullYear()}-${this._dateOfBirth.getMonth() + 1}-${this._dateOfBirth.getDate()}`;
 }

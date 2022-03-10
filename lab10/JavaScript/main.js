@@ -1,6 +1,6 @@
 "use strict";
-
-import { Person } from "./Module/person.js";
+// import {Person,Employee } from './Module'
+import { Person  } from "./Module/person.js";
 import { Employee } from "./Module/Employee.js";
 
 const persons = [
