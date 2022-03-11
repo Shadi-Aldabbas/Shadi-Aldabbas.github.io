@@ -10,7 +10,7 @@ export class Patient {
   #OutPatientYes = null;
   #OutPatientNo = null;
 
-  constructor(ID, Fname, Mname, Lname, dateOfBirth, dep, OutPatient) {
+  constructor(ID, Fname, Mname, Lname, dateOfBirth, dep, OutPatientYes,OutPatientNo) {
     this.#ID = ID;
     this.#Fname = Fname;
     this.#Mname = Mname;
@@ -39,7 +39,7 @@ export class Patient {
   setOutPatientYes = (OutPatient) => (this.#OutPatientYes = OutPatient);
   setOutPatientNo = (OutPatient) => (this.#OutPatientNo = OutPatient);
 
-  // toString() {
-  //     return `{AccountNo: ${this.#accountNo}, CustomerName: ${this.#customerName}, AccountType: ${this.#accountType}}`;
-  // }
+  toString = () => {
+    return ` ID: ${this.ID} Fname: ${this.Fname} Mname: ${this.Mname} Lname: ${this.Lname} dateOfBirth: ${this.dateOfBirth} dep: ${this.dep} OutPatientYes: ${this.OutPatientYes} OutPatientNo: ${this.OutPatientNo}`
+  }
 }

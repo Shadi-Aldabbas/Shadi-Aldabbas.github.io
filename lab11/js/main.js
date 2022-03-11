@@ -17,19 +17,18 @@ $(document).ready(function () {
     const dep = $("#dep").val();
     const OutPatientYes = $("#OutPatientYes").val();
     const OutPatientNo = $("#OutPatientNo").val();
-    const newPatient = new Patient(ID,Fname,Mname,Lname,dateOfBirth,dep,OutPatientYes,OutPatientNo);
 
+    const newPatient = new Patient(ID,Fname,Mname,Lname,dateOfBirth,dep,OutPatientYes,OutPatientNo);
     patientData.push(newPatient);
-    // createAccount(newPatient, patientData.length);
-    $("#ID").val("");
-    $("#Fname").val("");
-    $("#Mname").val("");
-    $("#Lname").val("");
-    $("#dateOfBirth").val("");
-    $("#dep").val("");
-    $("#OutPatientYes").val("");
-    $("#OutPatientNo").val("");
-    alert(newPatient);
+    createPatient(newPatient);
+    // $("#ID").val("");
+    // $("#Fname").val("");
+    // $("#Mname").val("");
+    // $("#Lname").val("");
+    // $("#dateOfBirth").val("");
+    // $("#dep").val("");
+    // $("#OutPatientYes").val("");
+    // $("#OutPatientNo").val("");
   });
 
 //   function createAccount(newPatient, numAccounts) {
@@ -56,7 +55,23 @@ $(document).ready(function () {
 //     newCellAccountType.appendChild(strNewRowAccountType);
 //     console.log("Account created");
 //   }
-const createAccount = (newPatient, numAccounts) => { 
-    const row_id = $('#tablePatients tbody tr')
+const createPatient = (newPatient) => { 
+    const row_id = $('#tablePatients tbody tr').length + 1;
+    const is_out = newPatient.OutPatientYes == true ? true : false;
+    const row = `
+    <tr>
+        <td>${newPatient.getID()}</td>
+        <td>${newPatient.getFname()}</td>
+        <td>${newPatient.getMname()}</td>
+        <td>${newPatient.getLname()}</td>
+        <td>${newPatient.getdateOfBirth()}</td>
+        <td>${newPatient.getdep()}</td>
+        <td>${is_out}</td>
+        
+    </tr>
+    `
+    $('#tablePatients tbody').append(row);
+    // this.reset();
+    alert('paitent inserted successfully');
 }
 });
