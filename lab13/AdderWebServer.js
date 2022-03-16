@@ -10,14 +10,13 @@ app.get('', (req,res) => {
 })
 
 app.post('/', (req,res)=>{
-  const n1 = req.body.first;
-  const n2 = req.body.second;
+  const first = req.body.first;
+  const second = req.body.second;
   const operation = req.body.operation;
 
-  console.log('the answer is: ' + eval(n1 + operation + n2));
-  res.send('the answer is: ' + eval(n1 + operation + n2));
+  res.send('the Answer is: ' + eval(first + operation + second));
 
 })
-app.listen(3000,(res)=>{
-  console.log('3000 started');
+app.listen(8000,(res)=>{
+  console.log('8000 started');
 })
