@@ -1,5 +1,5 @@
 /*  Attach a directly bound event handler */
-$("#articlesList a").on("click", function(event) {
+$("#container a").on("click", function(event) {
 
     event.preventDefault(); 
     $("#container").append(`
