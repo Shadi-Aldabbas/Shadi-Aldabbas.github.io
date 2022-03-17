@@ -56,25 +56,25 @@
                     <p>Enter you full name as printed on your student card</p>
                 </div>
                 <div class="col-12">
-                    <label>*State:</label>
+                    <label>*levelOfStudy:</label>
                     <select required id="levelOfStudy" name="levelOfStudy" class="form-select">
                         <option selected value="">select...</option>
                         <option id="levelOfStudy" name="levelOfStudy" value="Graduate">Graduate</option>
                         <option id="levelOfStudy" name="levelOfStudy" value="undergraduate">undergraduate</option>
                     </select>
-                    <p>Enter you state of residant</p>
+                    <p>Enter you levelOfStudy </p>
                 </div>
                 <div class="col-6 offset-6 justify-content-end">
-                    <input type="submit" class="btn btn-primary" />
-                    <input type="reset" class="btn btn-primary" />
+                    <input type="reset" class="btn btn-secondary btn-lg" />
+                    <input type="submit" class="btn btn-primary btn-lg" value="Register Student" />
                 </div>
                 <div style="margin-top: 1em;" id="divPatientsList" style="font-size: 1em">
                 <table class="table table-striped" id="tablePatients">
                     <thead>
                         <tr>
-                            <th scope="col">Patient ID No</th>
-                            <th scope="col">First Name</th>
-                            <th scope="col">Middle Initial(s)</th>
+                            <th scope="col">Student ID</th>
+                            <th scope="col">student Name</th>
+                            <th scope="col">levelOfStudy</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -19,3 +19,9 @@ footer {
 /* button {
     padding: 3em;
 } */
+
+.btn-lg{
+    width: 40%;
+    float: right;
+    margin-left: 5pt;
+}
