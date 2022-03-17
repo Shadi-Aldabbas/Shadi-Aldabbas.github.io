@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS472 Student Registration</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="ulNavItems">
+                <li>
+                    <a id="hyplnkAppBranding" href="/register">CS472:::Student Registration</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="divHeaderRightContent">
+            <span style="float: right;">Welcome, Guest</span>
+        </div>
+    </header>
+    <div id="mainContainer">
+        <main>
+            <h1 id="h1BankAccountForm">Student Registration Form</h1>            
+            <form id="formNewAccount" action="/register" method="POST">
+                <fieldset style="border: 0;">
+                    <div class="form-row">
+                        <div class="form-item">
+                            <label for="txtStudentId">Student ID</label>
+                        </div>
+                        <div class="form-item">
+                            <input class="form-ctrl" type="text" name="txtStudentId" id="txtStudentId" placeholder="000-XXX-XXXX" required autofocus pattern="000-\d{3}-\d{4}">
+                        </div>
+                        <div class="form-item small-instr-text">
+                            <span>Your unique student Identification number.</span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-item">
+                            <label for="txtFullName">Full Name</label>
+                        </div>
+                        <div class="form-item">
+                            <input class="form-ctrl" type="text" name="txtFullName" id="txtFullName" placeholder="e.g. Anna J. Smith" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-item">
+                            <label for="txtFullName">*Level of study:</label>
+                        </div>
+                        <div class="form-item">
+                        <input required="" type="radio" name="radioLvlOfStudy" id="radioUnderGrad" class="custom-control-input" value="under"><label for="radioUnderGrad" class="custom-control-label">Undergraduate</label>
+                        </div>
+                        <div class="form-item">
+                        <input required="" type="radio" name="radioLvlOfStudy" id="radioPostGrad" class="custom-control-input" value="post"><label for="radioPostGrad" class="custom-control-label">Postgraduate</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-item">
+                            <label for="ddlNextCourse">*Next Course to take:</label>
+                        </div>
+                        <div class="form-item">
+                            <select class="form-ctrl-sel" name="ddlNextCourse" id="ddlNextCourse" required>
+                                <option value="">Select...</option>
+                                <option value="CS401-MPP">CS401-MPP</option>
+                                <option value="CS544-EA">CS544-EA</option>
+                                <option value="CS582-ASD">CS582-ASD</option>
+                            </select>
+                        </div>
+                    </div>   
+                    <div class="form-row">
+                        <input class="btn-std-med" type="submit" value="Register Student">
+                    </div>                                     
+                </fieldset>
+            </form>
+            
+        </main>
+    </div>
+    <footer>
+        <div>
+            <span>CS472-WAP ::: Student Registration</span>
+            <span style="float: right;">O. Kalu, MIU ::: &copy; March 2022</span>
+        </div>
+    </footer>
+</body>
+</html>

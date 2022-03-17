@@ -29,6 +29,7 @@ console.log("counter = " + count.add());
 
 
 // Question 10,11 start ---------------------------------------
+// revealing
 // all the methods that are in return is public other than than they are private
 const Employee = () => {
   let name = "";
